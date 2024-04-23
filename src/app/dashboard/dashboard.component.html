@@ -1,0 +1,57 @@
+<div class="header">
+    <h1>Health Monitor for Disease Prevention</h1>
+</div>
+
+<div class="dashboard-container">
+    <div *ngIf="currentPatient; else notLoggedIn">
+        <div class="section patient-overview">
+            <h2>Patient Dashboard - {{ currentPatient.name }}</h2>
+            <p><strong>Age:</strong> {{ currentPatient.age }}</p>
+            <p><strong>Gender:</strong> {{ currentPatient.gender }}</p>
+        </div>
+
+        <div class="section past-illnesses">
+            <h3>Past Illnesses</h3>
+            <ul>
+                <li *ngFor="let illness of currentPatient.conditions">{{ illness }}</li>
+            </ul>
+        </div>
+
+        <div class="section current-medications">
+            <h3>Current Medications</h3>
+            <p>{{ currentPatient.currentMedications }}</p>
+        </div>
+
+        <div class="section lab-results">
+            <h3>Recent Lab Results</h3>
+            <p>{{ currentPatient.labResults }}</p>
+        </div>
+
+        <div class="section lab-interpretation">
+            <h3>Lab Interpretation</h3>
+            <p class="alert">{{ currentPatient.labInterpretation }}</p>
+        </div>
+
+        <div class="section advise">
+            <h3>Medical Advise</h3>
+            <p>{{ currentPatient.advise }}</p>
+        </div>
+    </div>
+    <ng-template #notLoggedIn>
+        <div class="section">
+            <p>Please log in to see patient information.</p>
+        </div>
+    </ng-template>
+
+    <div>
+        <h2>Appointments</h2>
+        <ul>
+          <li *ngFor="let appointment of appointments">
+            {{ appointment.title }} - {{ appointment.start | date: 'fullDate' }}
+          </li>
+        </ul>
+        <app-schedule-appointment></app-schedule-appointment>
+      </div>
+</div>
+
+

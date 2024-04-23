@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(39, 55, 77, 0.5); /* Dark background */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at bottom, #27374D 0%, #526D82 100%);
+    overflow: hidden;
+    z-index: -1;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 1000px 1000px  white,
+                1234px 840px  white,
+                600px 1430px  white,
+                1890px 980px  white,
+                500px 650px  white,
+                950px 320px  white,
+                1500px 600px  white,
+                230px 880px  white,
+                855px 2300px  white,
+                1740px 470px  white,
+                1280px 1350px  white; /* Random star positions */
+    z-index: -1;
+}

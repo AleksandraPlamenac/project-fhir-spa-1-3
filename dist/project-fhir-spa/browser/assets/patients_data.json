@@ -1,0 +1,64 @@
+{
+  "patients": [
+    {
+      "id": "1",
+      "login": "michaelBrown",
+      "name": "Michael Brown",
+      "age": 30,
+      "gender": "Male",
+      "conditions": ["Diabetes", "Hypertension"],
+      "labResults": "Blood Sugar: 7.8 mmol/L",
+      "labInterpretation": "Slightly elevated, indicating a risk of pre-diabetes.",
+      "advise": "Recommended diet and lifestyle changes.",
+      "currentMedications": ["Metformin", "Lisinopril"]
+    },
+    {
+      "id": "2",
+      "login": "janeSmith",
+      "name": "Jane Smith",
+      "age": 25,
+      "gender": "Female",
+      "conditions": ["Asthma"],
+      "labResults": "Peak Expiratory Flow Rate: 420 L/min",
+      "labInterpretation": "Normal PEFR, no signs of current asthma exacerbation.",
+      "advise": "Maintain current medication and monitor symptoms.",
+      "currentMedications": ["Salbutamol", "Fluticasone"]
+    },
+    {
+      "id": "3",
+      "login": "aliceJones",
+      "name": "Alice Jones",
+      "age": 40,
+      "gender": "Female",
+      "conditions": ["Hyperthyroidism"],
+      "labResults": "TSH: 0.02 IU/mL",
+      "labInterpretation": "Lower than normal TSH levels indicating hyperthyroidism.",
+      "advise": "Consider adjusting thyroxine dose.",
+      "currentMedications": ["Methimazole", "Propranolol"]
+    },
+    {
+      "id": "4",
+      "login": "bobBrown",
+      "name": "Bob Brown",
+      "age": 55,
+      "gender": "Male",
+      "conditions": ["Arthritis", "Heart Disease"],
+      "labResults": "CRP: 15 mg/L",
+      "labInterpretation": "Elevated CRP, consistent with active inflammation.",
+      "advise": "Anti-inflammatory medication adjustment needed.",
+      "currentMedications": ["Ibuprofen", "Atorvastatin"]
+    },
+    {
+      "id": "5",
+      "login": "claraWhite",
+      "name": "Clara White",
+      "age": 60,
+      "gender": "Female",
+      "conditions": ["Osteoporosis"],
+      "labResults": "Bone Density Scan: -2.5 SD",
+      "labInterpretation": "Indicates osteoporosis.",
+      "advise": "Increase calcium intake and consider bisphosphonates.",
+      "currentMedications": ["Calcium supplements", "Alendronate"]
+    }
+  ]
+}
